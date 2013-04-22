@@ -54,3 +54,4 @@ we are able to name arbitrary new variables s1 and s2, but the compiler knows th
 The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
 
 ..................................................................................................................
+
