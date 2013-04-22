@@ -10,28 +10,28 @@ is important in connecting events to behaviors. Events can be user actions, such
 follows the event. An example of this can be seen using ActionListeners:
 
     class ButtonHandler implements ActionListener {
-          public void actionPerformed(ActionEvent e) {
-                //do something
-          }
+          public void actionPerformed(ActionEvent e) {
+                //do something
+          }
     }
 
     class UIBuilder {
-          public UIBuilder() {
-                button.addActionListener(new ButtonHandler());
-          }
+          public UIBuilder() {
+                button.addActionListener(new ButtonHandler());
+          }
     }
 
 The ButtonHandler class implements an ActionListener, and stores one method, actionPerformed. ButtonHandler has defined its APIs, declared by ActionListener. 
 This code can be simplified with anonymous inner classes:
 
     class UIBuilder {
-          public UIBuilder() {
-                button.addActionListener(new ActionListener() {
-                      public void actionPerformed(ActionEvent event) {
-                            //do something
-                      }
-                }
-          }
+          public UIBuilder() {
+                button.addActionListener(new ActionListener() {
+                      public void actionPerformed(ActionEvent event) {
+                            //do something
+                      }
+                }
+          }
     }
 
 With anonymous inner classes, the new implementation is cleaner, but we still create an instance of a class for a single method. Lambda expressions solve 
