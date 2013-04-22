@@ -41,6 +41,7 @@ With anonymous inner classes, the new implementation is cleaner, but we still cr
 Lambda expressions solve these kinds of problems. 
 
 ..................................................................................................................
+
 A useful thing the Lambda expressions will be able to do in Java 8 is type inferencing. 
 Type inferencing was initially introduced in the Java 7 sdk, but contribute to higher order functional programming. 
 Type inferencing is very useful in programming because we can choose to omit a type definition whenever the compiler could infer that type by itself. 
@@ -51,4 +52,5 @@ For example, in this code:
      
 we are able to name arbitrary new variables s1 and s2, but the compiler knows that we are talking about strings so is able to deal with it appropriately. 
 The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
+
 ..................................................................................................................
